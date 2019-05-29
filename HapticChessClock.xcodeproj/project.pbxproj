@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F0926FF229BA509006C3B66 /* ClockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0926FE229BA509006C3B66 /* ClockController.swift */; };
+		0F57B3DA221B517200CDA653 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57B3D9221B517200CDA653 /* AppDelegate.swift */; };
+		0F57B3DC221B517200CDA653 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57B3DB221B517200CDA653 /* ViewController.swift */; };
+		0F57B3E1221B517300CDA653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F57B3E0221B517300CDA653 /* Assets.xcassets */; };
+		0F57B3F3221B547700CDA653 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57B3F2221B547700CDA653 /* ClockView.swift */; };
+		0F57B3F5221B548A00CDA653 /* ClockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F57B3F4221B548A00CDA653 /* ClockView.xib */; };
+		0F57B3F9221B59AA00CDA653 /* UIColor+HCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57B3F8221B59AA00CDA653 /* UIColor+HCC.swift */; };
+		0F57B3FD221B6BA600CDA653 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F57B3FC221B6BA600CDA653 /* ViewController.xib */; };
+		0F57B403221BD3E500CDA653 /* HCCTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F57B402221BD3E500CDA653 /* HCCTimer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F0926FE229BA509006C3B66 /* ClockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockController.swift; sourceTree = "<group>"; };
+		0F57B3D6221B517200CDA653 /* HapticChessClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticChessClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F57B3D9221B517200CDA653 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0F57B3DB221B517200CDA653 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0F57B3E0221B517300CDA653 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F57B3E5221B517300CDA653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F57B3F2221B547700CDA653 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		0F57B3F4221B548A00CDA653 /* ClockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClockView.xib; sourceTree = "<group>"; };
+		0F57B3F8221B59AA00CDA653 /* UIColor+HCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HCC.swift"; sourceTree = "<group>"; };
+		0F57B3FC221B6BA600CDA653 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		0F57B402221BD3E500CDA653 /* HCCTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCCTimer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F57B3D3221B517200CDA653 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F57B3CD221B517200CDA653 = {
+			isa = PBXGroup;
+			children = (
+				0F57B3D8221B517200CDA653 /* HapticChessClock */,
+				0F57B3D7221B517200CDA653 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F57B3D7221B517200CDA653 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F57B3D6221B517200CDA653 /* HapticChessClock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F57B3D8221B517200CDA653 /* HapticChessClock */ = {
+			isa = PBXGroup;
+			children = (
+				0F57B3EF221B530F00CDA653 /* Controller */,
+				0F57B3EE221B52EB00CDA653 /* Model */,
+				0F57B3ED221B52CB00CDA653 /* View */,
+				0F57B3F6221B596F00CDA653 /* Extensions */,
+				0F57B3D9221B517200CDA653 /* AppDelegate.swift */,
+				0F57B3E0221B517300CDA653 /* Assets.xcassets */,
+				0F57B3E5221B517300CDA653 /* Info.plist */,
+			);
+			path = HapticChessClock;
+			sourceTree = "<group>";
+		};
+		0F57B3ED221B52CB00CDA653 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F57B3F2221B547700CDA653 /* ClockView.swift */,
+				0F57B3F4221B548A00CDA653 /* ClockView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F57B3EE221B52EB00CDA653 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F57B402221BD3E500CDA653 /* HCCTimer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F57B3EF221B530F00CDA653 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F57B3DB221B517200CDA653 /* ViewController.swift */,
+				0F57B3FC221B6BA600CDA653 /* ViewController.xib */,
+				0F0926FE229BA509006C3B66 /* ClockController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0F57B3F6221B596F00CDA653 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F57B3F8221B59AA00CDA653 /* UIColor+HCC.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F57B3D5221B517200CDA653 /* HapticChessClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F57B3E8221B517300CDA653 /* Build configuration list for PBXNativeTarget "HapticChessClock" */;
+			buildPhases = (
+				0F57B3D2221B517200CDA653 /* Sources */,
+				0F57B3D3221B517200CDA653 /* Frameworks */,
+				0F57B3D4221B517200CDA653 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HapticChessClock;
+			productName = HapticChessClock;
+			productReference = 0F57B3D6221B517200CDA653 /* HapticChessClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F57B3CE221B517200CDA653 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Yoon Shin";
+				TargetAttributes = {
+					0F57B3D5221B517200CDA653 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 0F57B3D1221B517200CDA653 /* Build configuration list for PBXProject "HapticChessClock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0F57B3CD221B517200CDA653;
+			productRefGroup = 0F57B3D7221B517200CDA653 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F57B3D5221B517200CDA653 /* HapticChessClock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F57B3D4221B517200CDA653 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F57B3F5221B548A00CDA653 /* ClockView.xib in Resources */,
+				0F57B3FD221B6BA600CDA653 /* ViewController.xib in Resources */,
+				0F57B3E1221B517300CDA653 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F57B3D2221B517200CDA653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F57B403221BD3E500CDA653 /* HCCTimer.swift in Sources */,
+				0F0926FF229BA509006C3B66 /* ClockController.swift in Sources */,
+				0F57B3DC221B517200CDA653 /* ViewController.swift in Sources */,
+				0F57B3F3221B547700CDA653 /* ClockView.swift in Sources */,
+				0F57B3F9221B59AA00CDA653 /* UIColor+HCC.swift in Sources */,
+				0F57B3DA221B517200CDA653 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F57B3E6221B517300CDA653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0F57B3E7221B517300CDA653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F57B3E9221B517300CDA653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 428MH6T4T9;
+				INFOPLIST_FILE = HapticChessClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yoon-Dev.HapticChessClock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F57B3EA221B517300CDA653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 428MH6T4T9;
+				INFOPLIST_FILE = HapticChessClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yoon-Dev.HapticChessClock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F57B3D1221B517200CDA653 /* Build configuration list for PBXProject "HapticChessClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F57B3E6221B517300CDA653 /* Debug */,
+				0F57B3E7221B517300CDA653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F57B3E8221B517300CDA653 /* Build configuration list for PBXNativeTarget "HapticChessClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F57B3E9221B517300CDA653 /* Debug */,
+				0F57B3EA221B517300CDA653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F57B3CE221B517200CDA653 /* Project object */;
+}
